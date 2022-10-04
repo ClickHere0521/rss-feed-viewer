@@ -1,0 +1,72 @@
+@import "../../utils/index.scss";
+
+.viewer {
+  &__body {
+    text-align: center;
+    letter-spacing: 0.64px;
+    line-height: 1.5em;
+    font-size: larger;
+    width: calc(100vw - 430px);
+    
+    figure {
+      img {
+        max-width: 600px;
+      }
+
+      @media (max-width: $screen-md) {
+        img {
+          max-width: 47vw;
+        }
+      }
+
+      @media (max-width: $screen-sm) {
+        img {
+          max-width: 400px;
+        }
+      }
+
+      @media (max-width: $screen-sm) {
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+    a {
+      color: $color-primary-1;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .icon--twitter {
+      fill: $color-primary-8;
+    }
+
+    .icon--google {
+      fill: $color-primary-1;
+    }
+
+    .icon--gmail {
+      fill: $color-primary-1;
+    }
+
+    .icon--linkedin {
+      fill: $color-primary-3;
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .viewer {
+    margin: auto;
+    min-width: 450px;
+  }
+}
+
+@media (max-width: $screen-xs) {
+  .viewer {
+    min-width: 350px;
+  }
+}

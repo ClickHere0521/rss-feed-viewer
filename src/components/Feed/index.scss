@@ -1,0 +1,41 @@
+@import "../../utils/index.scss";
+
+.feed {
+  &__body {
+    text-align: center;
+    border-bottom: 1px solid $color-secondary-1;
+    padding-bottom: 16px;
+    button {
+      font-size: 3vmin;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      background: $text-color-light;
+      color: $color-secondary-2;
+      border: 0px solid $color-secondary-3;
+      margin: 0.1em;
+      transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease,
+        transform 0.2s ease;
+      box-shadow: 0 0 0 $color-primary-3;
+      transform: translateY(0);
+      background-color: #d5d5d5;
+    }
+    button:first-of-type {
+      border-radius: 0.5em 0 0 0.5em;
+    }
+    button:last-of-type {
+      border-radius: 0 0.5em 0.5em 0;
+    }
+  }
+
+  &__body:hover {
+    button {
+      color: $color-primary-4;
+    }
+    button:hover {
+      background: $color-primary-1;
+      color: $text-color-light;
+      box-shadow: 0 0 0.8em 0 rgba(213, 63, 140, 0.8);
+      transform: translateY(-0.2em);
+    }
+  }
+}

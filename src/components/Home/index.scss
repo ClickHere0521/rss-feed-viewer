@@ -1,0 +1,62 @@
+@import "../../utils/index.scss";
+
+.home {
+  &__body {
+    padding: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  &__loader {
+    border: 16px solid $color-secondary-1; /* Light grey */
+    border-top: 16px solid $color-primary-1; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    margin: 20vh auto;
+  }
+
+  &__error {
+    color: $color-primary-1;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 100px;
+  }
+
+  &__feed {
+    display: flex;
+  }
+
+  &__bookmark {
+    cursor: pointer;
+    position: absolute;
+    font-size: xx-large;
+    right: 16px;
+    top: 16px;
+  }
+
+  &__bookmark_checked {
+    color: $color-primary-1;
+  }
+
+  &__bookmark_unchecked {
+    color: $text-color-dark;
+  }
+
+  @media (max-width: $screen-sm) {
+    &__feed {
+      display: block;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

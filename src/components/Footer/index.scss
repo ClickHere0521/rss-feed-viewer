@@ -1,0 +1,16 @@
+@import "../../utils/index.scss";
+
+.footer {
+  &__body {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    background-color: $color-secondary-2;
+    color: $text-color-light;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+  }
+}
